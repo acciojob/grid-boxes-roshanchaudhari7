@@ -1,1 +1,50 @@
 /*  your css code here. If applicable */
+* {
+	margin: 0;
+	padding: 0;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 242.5px 242.5px 242.5px 242.5px;
+    grid-template-rows: 124px 124px 124px 124px 124px;
+	grid-gap: 10px 10px;
+}
+#grid div {
+	border: 2px solid white;
+	background-color: green;
+	font-size: 40px;
+	padding: 5px;
+	color: white;
+}
+
+.box1 {
+  grid-column: span 4/auto;
+}
+.box2 {
+  grid-row:span 4/auto;
+  grid-column:span 1/auto;
+}
+.box3 {
+  grid-column:span 1/3;
+}
+.box4 {
+  grid-column:span 2/auto;
+}
+.box5 {
+  grid-column:span 2/auto;
+}
+.box6 {
+  grid-column:4/5;
+}
+.box7 {
+  grid-column:2/3;
+}
+.box8 {
+  grid-column:3/4;
+}
+.box9 {
+  grid-column:4/5;
+}
+.box10 {
+  grid-column:span 3/auto;
+}
